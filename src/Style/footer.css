@@ -1,3 +1,4 @@
+/* footer start */
 .Footer{
     display: flex;
     justify-content: space-between;
@@ -24,3 +25,4 @@
     margin-top: .5rem ;
     border-radius: 4px;
 }
+/* footer end */

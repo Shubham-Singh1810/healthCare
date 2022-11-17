@@ -18,5 +18,4 @@ function LoginHeader() {
     </div>
   )
 }
-
 export default LoginHeader

@@ -1,31 +1,53 @@
 /* SlideImage start */
 .SlideImage{
     margin: 2rem 15rem;
-}
-.SlideImage img{
-    width: 100%;
     height: 45vh;
-    border-radius: 1rem;
+    background: url("https://previews.123rf.com/images/chagin/chagin1809/chagin180900009/107646733-young-female-doctor-on-modern-clinic-background-horizontal-image-for-website-design-.jpg");
+    background-size: 100% 100%;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+    animation: slideShow 12s infinite ;
+    box-shadow: 2px 2px 8px black;
 }
+@keyframes slideShow{
+    30%{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYhGY_VRbJuqAVNEJvdrgnjmhwCd5VTWfeA&usqp=CAU");
+        background-size: 100% 100%;
+    }
+    60%{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dj0hdwmorFIzd5ZwyQLAUzo1L6yQkD72Xg&usqp=CAU");
+        background-size: 100% 100%;
+    }
+    90%{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBjstNgeHEz8kRNuIG7ShL70WCoJzJYVGumQ&usqp=CAU");
+        background-size: 100% 100%;
+    }
+}
+/* slide image end */
+
+/* section start */
 section{
     padding: 3rem 15rem;
 }
 section h1{
     font-size: 2rem;
+    padding-bottom: 2rem;
+    font-family: cursive;
 } 
-/* SlideImage end */
+/* section end */
 
 /* card start */
 .cardLister{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
 }
 .Card{
-    padding: 1rem;
-    margin: 2rem;
+    padding: 1rem 1rem;
     border: 1px solid gray;
     font-size: 1.2rem;
-    border-radius: .5rem;
+    border-radius: .2rem;
     box-shadow: 2px 2px 4px black;
     background-color: white;
 }
@@ -33,7 +55,6 @@ section h1{
     height: 4rem;
     width: 4rem;
     margin: 1rem;
-    /* box-shadow: 1px -1px 1px navy; */
     border-radius: 50%;
     border: 1px solid navy;
     padding: .5rem;
